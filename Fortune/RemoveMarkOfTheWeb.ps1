@@ -1,0 +1,1 @@
+﻿Unblock-File .\Fortune.resx

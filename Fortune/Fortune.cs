@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Zip files mark resx files as web content causing an error. You will need to unblock this file.
+    /// A pre build event was added to use the Unblock-File PowerShell command.
+    /// 
+    /// https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/unblock-file?view=powershell-6
+    /// </summary>
     public partial class Fortune : Form
     {
         private static Random random = new Random(DateTime.Now.Millisecond); //this class helps generate random numbers-cmj
