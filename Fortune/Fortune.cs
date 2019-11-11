@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
 
             {
                 MessageBox.Show("Your fortune: \n\n"
-                                    + fortuneMessage[selectedNum]);
+                                    + fortuneMessage[random.Next(0,21)]);
                 
             }
         }
@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
 
             
             string commaseperatorluckynumber = string.Join(", ", luckynumbers);
-            MessageBox.Show("Your lucky numbers: " + commaseperatorluckynumber);
+            MessageBox.Show("Your lucky numbers: " + commaseperatorluckynumber, "Lucky Numbers");
 
 
             }

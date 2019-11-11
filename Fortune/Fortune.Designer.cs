@@ -40,7 +40,9 @@
             // lblSelectNumber
             // 
             this.lblSelectNumber.AutoSize = true;
-            this.lblSelectNumber.Location = new System.Drawing.Point(92, 26);
+            this.lblSelectNumber.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSelectNumber.ForeColor = System.Drawing.Color.Khaki;
+            this.lblSelectNumber.Location = new System.Drawing.Point(317, 50);
             this.lblSelectNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblSelectNumber.Name = "lblSelectNumber";
             this.lblSelectNumber.Size = new System.Drawing.Size(172, 23);
@@ -49,44 +51,52 @@
             // 
             // numSelector
             // 
-            this.numSelector.Location = new System.Drawing.Point(501, 26);
+            this.numSelector.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.numSelector.ForeColor = System.Drawing.Color.Khaki;
+            this.numSelector.Location = new System.Drawing.Point(355, 90);
             this.numSelector.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.numSelector.Name = "numSelector";
-            this.numSelector.Size = new System.Drawing.Size(249, 30);
+            this.numSelector.Size = new System.Drawing.Size(93, 30);
             this.numSelector.TabIndex = 2;
             this.numSelector.ValueChanged += new System.EventHandler(this.numSelector_ValueChanged);
             // 
             // btnClickForFortune
             // 
-            this.btnClickForFortune.Location = new System.Drawing.Point(297, 231);
+            this.btnClickForFortune.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClickForFortune.ForeColor = System.Drawing.Color.Salmon;
+            this.btnClickForFortune.Location = new System.Drawing.Point(260, 222);
             this.btnClickForFortune.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnClickForFortune.Name = "btnClickForFortune";
             this.btnClickForFortune.Size = new System.Drawing.Size(311, 57);
             this.btnClickForFortune.TabIndex = 3;
             this.btnClickForFortune.Text = "Your fortune awaits..";
-            this.btnClickForFortune.UseVisualStyleBackColor = true;
+            this.btnClickForFortune.UseVisualStyleBackColor = false;
             this.btnClickForFortune.Click += new System.EventHandler(this.btnClickForFortune_Click);
             // 
             // btnLuckyNumbers
             // 
-            this.btnLuckyNumbers.Location = new System.Drawing.Point(45, 388);
+            this.btnLuckyNumbers.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLuckyNumbers.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnLuckyNumbers.Location = new System.Drawing.Point(15, 447);
             this.btnLuckyNumbers.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnLuckyNumbers.Name = "btnLuckyNumbers";
             this.btnLuckyNumbers.Size = new System.Drawing.Size(259, 41);
             this.btnLuckyNumbers.TabIndex = 4;
-            this.btnLuckyNumbers.Text = "Click for lucky numbers";
-            this.btnLuckyNumbers.UseVisualStyleBackColor = true;
+            this.btnLuckyNumbers.Text = "Lucky Numbers";
+            this.btnLuckyNumbers.UseVisualStyleBackColor = false;
             this.btnLuckyNumbers.Click += new System.EventHandler(this.btnLuckyNumbers_Click);
             // 
             // DisclaimerBtn
             // 
-            this.DisclaimerBtn.Location = new System.Drawing.Point(591, 388);
+            this.DisclaimerBtn.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.DisclaimerBtn.ForeColor = System.Drawing.Color.Red;
+            this.DisclaimerBtn.Location = new System.Drawing.Point(601, 447);
             this.DisclaimerBtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.DisclaimerBtn.Name = "DisclaimerBtn";
             this.DisclaimerBtn.Size = new System.Drawing.Size(213, 41);
             this.DisclaimerBtn.TabIndex = 5;
             this.DisclaimerBtn.Text = "Disclaimer";
-            this.DisclaimerBtn.UseVisualStyleBackColor = true;
+            this.DisclaimerBtn.UseVisualStyleBackColor = false;
             this.DisclaimerBtn.Click += new System.EventHandler(this.DisclaimerBtn_Click);
             // 
             // Fortune
