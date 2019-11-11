@@ -29,22 +29,21 @@ namespace WindowsFormsApp1
                 NumericUpDown selector = (NumericUpDown)sender;//send this information to the event handler
                 selectedNum = (int)selector.Value;
 
-                if (selectedNum > 22 || selectedNum < 0)
+                if (selectedNum > 21 || selectedNum < 0)
                 {
                     throw new Exception("Oh snap! You need to pick a number between 0-21, you selected " + selectedNum + "!");
                 }
 
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "You screwed up!");
-                
+
             }
         }
         private void btnClickForFortune_Click(object sender, EventArgs e)
         {
- 
+
             string[] fortuneMessage = new string[22];// string array for fortune message
 
             string card = "You've got the ";
@@ -72,10 +71,10 @@ namespace WindowsFormsApp1
             fortuneMessage[20] = card + "Judgement:\n\n You may be at a crossroads, aware that any choice you make will bring a significant change with long-lasting effects. Tune in to your Higher Self, trust your judgement and know you are on the right path. If you still need clarity on the situation, look to your past and life lessons to guide you. All the pieces of the puzzle of your life are finally coming together to form one, unified picture of your life story. you may find comfort in sharing your struggles with others within a group environment.";
             fortuneMessage[21] = card + "The world:\n\n Celebrate your successes and bask in the joy of having brought your goals to fruition. Express gratitude for what you have created and harvested. Finally, make sure you don’t rush into the next big project; celebrating your journey will set you up for success when you are ready for your next challenge. Look back at your past experiences and acknowledge how far you have come and what you learned along the way. It may surprise you to look back at your progress and see how much you achieved.";
 
-                       
+
             {
-                MessageBox.Show(fortuneMessage[random.Next(0,21)], "Your fortune card:");
-                
+                MessageBox.Show(fortuneMessage[random.Next(0, 21)], "Your fortune card:");
+
             }
         }
 
@@ -83,13 +82,13 @@ namespace WindowsFormsApp1
         {
             int[] luckynumbers = GenerateLuckyNumbers();
 
-            
+
             string commaseperatorluckynumber = string.Join(", ", luckynumbers);
             MessageBox.Show("Your lucky numbers: " + commaseperatorluckynumber, "Lucky Numbers");
 
 
-            }
-        public static int [] GenerateLuckyNumbers()
+        }
+        public static int[] GenerateLuckyNumbers()
         {
             int[] luckyNumbers = new int[6]; //int array for lucky numbers
             for (int i = 0; i < 6; i++) //this is the loop -cmj
@@ -108,7 +107,7 @@ namespace WindowsFormsApp1
 Tarot Reading is subject to interpretation and should not be taken as Absolute.A Tarot Reading is never 100 % accurate, therefore it should never be fully trusted.A Tarot Reading does not replace Professional Medical/ Legal / Business Opinion and Advice on any occasion, regardless of how convinced you are that your Reading is accurate and the Reader to be trusted.If you are suffering severe difficulties in any of the above areas of; health, mental health, legalities and business concerns, you must consult with those Professionally Qualified to give suitable treatment or advice.A tarot reading, whether holistic or psychic, may not be suffice under the circumstances.
 
 Tarot Reading or Teaching will not Force you to follow a particular course of action, or attempt to exert any form of control over your free - will and common sense.Any decisions made, or actions taken by you as a result of your Tarot Reading or embarking upon The Truly Teach Me Tarot Course is your sole responsibility and has not been forced upon you, by me, your Tarot Reader or Teacher.I will not be held legally responsible for same.It is only with the complete understanding and acceptance of the above that a tarot reading or the use of content available through this course can be permitted.Neither can I assume any legal liability for any damages or alleged damages, losses, or other direct or indirect consequences of any client decisions / actions, subsequent to, or based on my Tarot Readings or Teachings.Your participation in this site is subject to the above terms and understanding, and is solely at your own risk.";
-            MessageBox.Show(disclaimer, "Fortune Disclaimer!" );
+            MessageBox.Show(disclaimer, "Fortune Disclaimer!");
         }
 
         private void Fortune_Load(object sender, EventArgs e)
