@@ -74,8 +74,7 @@ namespace WindowsFormsApp1
 
                        
             {
-                MessageBox.Show("Your fortune: \n\n"
-                                    + fortuneMessage[random.Next(0,21)]);
+                MessageBox.Show(fortuneMessage[random.Next(0,21)], "Your fortune card:");
                 
             }
         }
