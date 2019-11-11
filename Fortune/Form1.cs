@@ -28,9 +28,9 @@ namespace WindowsFormsApp1
                 NumericUpDown selector = (NumericUpDown)sender;//send this information to the event handler
                 selectedNum = (int)selector.Value;
 
-                if (selectedNum > 22 && selectedNum < 0)
+                if (selectedNum > 22 || selectedNum < 0)
                 {
-                    throw new Exception("Oh snap! You need to be a number between 0-21");
+                    throw new Exception("Oh snap! You need to be a number between 0-21, you selected " + selectedNum + "!");
                 }
 
             }
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
         private void btnClickForFortune_Click(object sender, EventArgs e)
         {
  
-            string[] fortuneMessage = new string[23];// string array for fortune message
+            string[] fortuneMessage = new string[22];// string array for fortune message
 
             string card = "You've got the ";
             //https://www.tarot.com/tarot/cards/major-arcana
@@ -70,7 +70,6 @@ namespace WindowsFormsApp1
             fortuneMessage[19] = card + ": ";
             fortuneMessage[20] = card + ": ";
             fortuneMessage[21] = card + ": ";
-            fortuneMessage[22] = card + ": ";
             
            
 
