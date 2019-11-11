@@ -101,5 +101,16 @@ namespace WindowsFormsApp1
             return luckyNumbers;
 
         }
+
+        private void DisclaimerBtn_Click(object sender, EventArgs e)
+        {
+            //NOTE: Reference URL https://teachmetarot.com/about-course/terms-and-conditions/legal-disclaimer/
+            string disclaimer = @"Although Tarot Reading is used as a self-counselling tool for spiritual growth and personal development, it is ultimately viewed as a form of Entertainment.
+
+Tarot Reading is subject to interpretation and should not be taken as Absolute.A Tarot Reading is never 100 % accurate, therefore it should never be fully trusted.A Tarot Reading does not replace Professional Medical/ Legal / Business Opinion and Advice on any occasion, regardless of how convinced you are that your Reading is accurate and the Reader to be trusted.If you are suffering severe difficulties in any of the above areas of; health, mental health, legalities and business concerns, you must consult with those Professionally Qualified to give suitable treatment or advice.A tarot reading, whether holistic or psychic, may not be suffice under the circumstances.
+
+Tarot Reading or Teaching will not Force you to follow a particular course of action, or attempt to exert any form of control over your free - will and common sense.Any decisions made, or actions taken by you as a result of your Tarot Reading or embarking upon The Truly Teach Me Tarot Course is your sole responsibility and has not been forced upon you, by me, your Tarot Reader or Teacher.I will not be held legally responsible for same.It is only with the complete understanding and acceptance of the above that a tarot reading or the use of content available through this course can be permitted.Neither can I assume any legal liability for any damages or alleged damages, losses, or other direct or indirect consequences of any client decisions / actions, subsequent to, or based on my Tarot Readings or Teachings.Your participation in this site is subject to the above terms and understanding, and is solely at your own risk.";
+            MessageBox.Show(disclaimer, "Fortune Disclaimer!" );
+        }
     }
 }

@@ -32,6 +32,7 @@
             this.numSelector = new System.Windows.Forms.NumericUpDown();
             this.btnClickForFortune = new System.Windows.Forms.Button();
             this.btnLuckyNumbers = new System.Windows.Forms.Button();
+            this.DisclaimerBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numSelector)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // 
             // btnClickForFortune
             // 
-            this.btnClickForFortune.Location = new System.Drawing.Point(172, 113);
+            this.btnClickForFortune.Location = new System.Drawing.Point(154, 112);
             this.btnClickForFortune.Name = "btnClickForFortune";
             this.btnClickForFortune.Size = new System.Drawing.Size(266, 80);
             this.btnClickForFortune.TabIndex = 3;
@@ -64,7 +65,7 @@
             // 
             // btnLuckyNumbers
             // 
-            this.btnLuckyNumbers.Location = new System.Drawing.Point(191, 250);
+            this.btnLuckyNumbers.Location = new System.Drawing.Point(12, 253);
             this.btnLuckyNumbers.Name = "btnLuckyNumbers";
             this.btnLuckyNumbers.Size = new System.Drawing.Size(141, 23);
             this.btnLuckyNumbers.TabIndex = 4;
@@ -72,11 +73,22 @@
             this.btnLuckyNumbers.UseVisualStyleBackColor = true;
             this.btnLuckyNumbers.Click += new System.EventHandler(this.btnLuckyNumbers_Click);
             // 
+            // DisclaimerBtn
+            // 
+            this.DisclaimerBtn.Location = new System.Drawing.Point(398, 253);
+            this.DisclaimerBtn.Name = "DisclaimerBtn";
+            this.DisclaimerBtn.Size = new System.Drawing.Size(116, 23);
+            this.DisclaimerBtn.TabIndex = 5;
+            this.DisclaimerBtn.Text = "Disclaimer";
+            this.DisclaimerBtn.UseVisualStyleBackColor = true;
+            this.DisclaimerBtn.Click += new System.EventHandler(this.DisclaimerBtn_Click);
+            // 
             // Fortune
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 469);
+            this.ClientSize = new System.Drawing.Size(526, 390);
+            this.Controls.Add(this.DisclaimerBtn);
             this.Controls.Add(this.btnLuckyNumbers);
             this.Controls.Add(this.btnClickForFortune);
             this.Controls.Add(this.numSelector);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.NumericUpDown numSelector;
         private System.Windows.Forms.Button btnClickForFortune;
         private System.Windows.Forms.Button btnLuckyNumbers;
+        private System.Windows.Forms.Button DisclaimerBtn;
     }
 }
 
