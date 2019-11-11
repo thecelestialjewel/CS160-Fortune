@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Fortune
     {
         /// <summary>
         /// Required designer variable.
@@ -54,7 +54,7 @@
             // 
             // btnClickForFortune
             // 
-            this.btnClickForFortune.Location = new System.Drawing.Point(42, 103);
+            this.btnClickForFortune.Location = new System.Drawing.Point(172, 113);
             this.btnClickForFortune.Name = "btnClickForFortune";
             this.btnClickForFortune.Size = new System.Drawing.Size(266, 80);
             this.btnClickForFortune.TabIndex = 3;
@@ -64,7 +64,7 @@
             // 
             // btnLuckyNumbers
             // 
-            this.btnLuckyNumbers.Location = new System.Drawing.Point(98, 232);
+            this.btnLuckyNumbers.Location = new System.Drawing.Point(191, 250);
             this.btnLuckyNumbers.Name = "btnLuckyNumbers";
             this.btnLuckyNumbers.Size = new System.Drawing.Size(141, 23);
             this.btnLuckyNumbers.TabIndex = 4;
@@ -72,17 +72,17 @@
             this.btnLuckyNumbers.UseVisualStyleBackColor = true;
             this.btnLuckyNumbers.Click += new System.EventHandler(this.btnLuckyNumbers_Click);
             // 
-            // Form1
+            // Fortune
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 316);
+            this.ClientSize = new System.Drawing.Size(536, 469);
             this.Controls.Add(this.btnLuckyNumbers);
             this.Controls.Add(this.btnClickForFortune);
             this.Controls.Add(this.numSelector);
             this.Controls.Add(this.lblSelectNumber);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Fortune";
+            this.Text = "Fortune";
             ((System.ComponentModel.ISupportInitialize)(this.numSelector)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Fortune : Form
     {
+        private static Random random = new Random(DateTime.Now.Millisecond); //this class helps generate random numbers-cmj
         public int selectedNum { get; private set; }
 
         //string fortuneMessage;
 
-        public Form1()
+        public Fortune()
         {
             InitializeComponent();
         }
@@ -93,10 +94,9 @@ namespace WindowsFormsApp1
         public static int [] GenerateLuckyNumbers()
         {
             int[] luckyNumbers = new int[6]; //int array for lucky numbers
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 6; i++) //this is the loop -cmj
             {
-                Random rnd = new Random();
-                luckyNumbers[i] = rnd.Next(1, 49);//random numbers 1 through 49
+                luckyNumbers[i] = random.Next(1, 49);//random numbers 1 through 49
             }
             return luckyNumbers;
 
