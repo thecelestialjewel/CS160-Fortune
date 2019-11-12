@@ -55,9 +55,15 @@
             this.numSelector.ForeColor = System.Drawing.Color.Khaki;
             this.numSelector.Location = new System.Drawing.Point(355, 90);
             this.numSelector.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.numSelector.Minimum = new decimal(new int[] {
+            -2147483648,
+            0,
+            0,
+            -2147483648});
             this.numSelector.Name = "numSelector";
             this.numSelector.Size = new System.Drawing.Size(93, 30);
             this.numSelector.TabIndex = 2;
+            this.numSelector.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numSelector.ValueChanged += new System.EventHandler(this.numSelector_ValueChanged);
             // 
             // btnClickForFortune
